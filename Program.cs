@@ -1,4 +1,5 @@
-﻿using System;
+﻿using proiect_ReteleNeuronaleAplicatii;
+using System;
 
 public class NeuralNetwork
 {
@@ -199,18 +200,37 @@ public class NeuralNetwork
 
     public static void Main(string[] args)
     {
-        double[] inputs = new double[] { 0.48, 0.14, 0.98, 0.82 };
+        Console.Write("Operatie dorita? Executie exemplu concret sau generare parametri retea? (generare/exemplu/exit):");
+        string? optiune = Console.ReadLine();
 
-        double[] expectedOutputs = new double[] { 0.62, 0.21 };
+        while(true) {
+            if (optiune == "exemplu")
+            {
+                double[] inputs = new double[] { 0.48, 0.14, 0.98, 0.82 };
 
-        NeuralNetwork nn = new NeuralNetwork();
-        nn.Train(inputs, expectedOutputs);
+                double[] expectedOutputs = new double[] { 0.62, 0.21 };
 
-        double[] result = nn.Test(inputs);
-        Console.WriteLine("Output for test input [0.125, 0.25, 0.5, 1]:");
-        foreach (var val in result)
-        {
-            Console.WriteLine(val);
+                NeuralNetwork nn = new NeuralNetwork();
+                nn.Train(inputs, expectedOutputs);
+
+                double[] result = nn.Test(inputs);
+                Console.WriteLine("Output for test input [0.125, 0.25, 0.5, 1]:");
+                foreach (var val in result)
+                {
+                    Console.WriteLine(val);
+                }
+            }
+            else if (optiune == "generare")
+            {
+                GeneratorDate generatorDate= new();
+                generatorDate.GenerareParametri(4, 3, 2);
+            }
+            else if(optiune == "exit")
+            {
+                Environment.Exit(0);
+            }
+            Console.Write("Operatie dorita? Executie exemplu concret sau generare parametri retea? (generare/exemplu/exit):");
+            optiune = Console.ReadLine();
         }
     }
 }

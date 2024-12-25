@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proiect-ReteleNeuronaleAplicatii", "proiect-ReteleNeuronaleAplicatii.csproj", "{3CBDC3AD-4480-4061-B21A-9D823B1B628A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CBDC3AD-4480-4061-B21A-9D823B1B628A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBDC3AD-4480-4061-B21A-9D823B1B628A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBDC3AD-4480-4061-B21A-9D823B1B628A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBDC3AD-4480-4061-B21A-9D823B1B628A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2DCDAC9-FF8A-4DD5-BA3D-5626BA1F8C3B}
+	EndGlobalSection
+EndGlobal
